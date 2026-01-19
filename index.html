@@ -13,7 +13,7 @@
 
 <body>
 
-    <section class="max-w-[1600px] mx-auto bg-[#1A0B2E]">
+    <section class="max-w-[1600px]  mx-auto bg-[#1A0B2E]">
         <header>
             <nav class="flex items-center justify-between px-20 py-5">
 
@@ -44,6 +44,52 @@
                 </button>
 
             </nav>
+
+            <section
+                class="relative   2xl: max-w-[1600px] h-[760px]  bg-[url('/assets/hero-bg.png')] bg-cover bg-center bg-no-repeat flex justify-center">
+
+                <img src="./assets/hero-circle.png" alt="" class="w-[350px] h-[350px] mt-20 ">
+
+                <img src="./assets/microphone.png" alt=""
+                    class="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+
+                <button class="absolute bg-[#00ff88] rounded-xl px-2 top-25 right-170 text-sm sm:text-xs">
+                    NEW
+                </button>
+
+            </section>
+
+            <section class=" max-w-[1600px] absolute top-140 left-180 flex flex-col items-center text-center mt-5 mb-5">
+
+                <!-- Heading -->
+                <h1 class="text-white text-6xl sm:text-4xl font-bold mb-4">
+                    TechWave
+                </h1>
+
+                <!-- Paragraph -->
+                <p class="text-white font-semibold text-base sm:text-sm mb-6 max-w-xl">
+                    Your daily dose of tech insights, productivity hacks, and personal growth
+                </p>
+
+                <div class="flex gap-4">
+
+                    <!-- Spotify Button -->
+                    <button
+                        class="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 shadow-md text-white font-semibold text-sm sm:text-xs">
+                        <img src="./assets/spotify.png" class="w-5" alt="">
+                        Listen on Spotify
+                    </button>
+
+                    <!-- Subscribe Button -->
+                    <button
+                        class="flex items-center gap-2 px-6 py-3 border rounded-full text-amber-200 font-semibold text-sm sm:text-xs">
+                        <img src="./assets/message.png" class="w-5" alt="">
+                        Subscribe
+                    </button>
+
+                </div>
+
+            </section>
 
 
         </header>
