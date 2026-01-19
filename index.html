@@ -4,39 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
     <title>TechWave</title>
 </head>
 
-<body>
+<body class="bg-[#1A0B2E]">
 
-    <section class="max-w-[1600px]  mx-auto bg-[#1A0B2E]">
-        <header>
+    <section class="max-w-[1600px] mx-auto">
+        <header class="relative">
+
+            <!-- NAVBAR -->
             <nav class="flex items-center justify-between px-20 py-5">
 
                 <!-- Logo -->
-                <h2 class="text-white text-4xl font-bold ">
+                <h2 class="text-white text-4xl font-bold">
                     Tech
-                    <samp
+                    <span _attach
                         class="bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 bg-clip-text text-transparent font-black drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)]">
                         Wave
-                    </samp>
+                    </span>
                 </h2>
 
-
-                <ul class="hidden sm:flex gap-8 text-white font-medium ">
+                <!-- Menu -->
+                <ul class="hidden sm:flex gap-8 text-white font-medium">
                     <li>About</li>
                     <li>Episodes</li>
                     <li>Host</li>
                 </ul>
 
-
+                <!-- Mobile Menu Icon -->
                 <img class="sm:hidden w-6 h-6" src="./assets/hamburger-menu.png" alt="Menu">
 
-
+                <!-- Subscribe Button -->
                 <button
                     class="hidden sm:flex items-center gap-2 px-6 py-2 rounded-full text-white text-sm font-semibold bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 shadow-md">
                     Subscribe
@@ -45,44 +50,56 @@
 
             </nav>
 
+            <!-- HERO SECTION -->
             <section
-                class="relative   2xl: max-w-[1600px] h-[760px]  bg-[url('/assets/hero-bg.png')] bg-cover bg-center bg-no-repeat flex justify-center">
+                class="relative min-w-[440px] max-w-[1600px] h-[760px] bg-[url('/assets/hero-bg.png')] bg-cover bg-center bg-no-repeat flex justify-center">
 
-                <img src="./assets/hero-circle.png" alt="" class="w-[350px] h-[350px] mt-20 ">
 
-                <img src="./assets/microphone.png" alt=""
-                    class="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-
-                <button class="absolute bg-[#00ff88] rounded-xl px-2 top-25 right-170 text-sm sm:text-xs">
+                <!-- Green NEW badge -->
+                <button class="absolute top-[120px] md:left-[900px] bg-[#00ff88] rounded-xl px-3 py-1 text-xs 
+    font-bold sm:absolute left-[400px] md:block ">
                     NEW
                 </button>
 
+
+
+
+                <!-- Circle -->
+                <img src="./assets/hero-circle.png" alt="" class="w-[350px] h-[350px] mt-20">
+
+                <!-- Microphone -->
+                <img src="./assets/microphone.png" alt=""
+                    class="absolute top-[250px] left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+
             </section>
 
-            <section class=" max-w-[1600px] absolute top-140 left-180 flex flex-col items-center text-center mt-5 mb-5">
+            <!-- TEXT + BUTTON SECTION -->
+            <section
+                class="absolute md:top-[540px] md:left-[550px] sm:absolute top-[500px] left-[60px] flex flex-col items-center text-center mt-5 mb-5">
 
                 <!-- Heading -->
-                <h1 class="text-white text-6xl sm:text-4xl font-bold mb-4">
+                <h1 class="text-white text-6xl font-bold mb-4">
                     TechWave
                 </h1>
 
                 <!-- Paragraph -->
-                <p class="text-white font-semibold text-base sm:text-sm mb-6 max-w-xl">
+                <p class="text-white font-semibold text-base mb-6 max-w-xl">
                     Your daily dose of tech insights, productivity hacks, and personal growth
                 </p>
 
+                <!-- Buttons -->
                 <div class="flex gap-4">
 
                     <!-- Spotify Button -->
                     <button
-                        class="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 shadow-md text-white font-semibold text-sm sm:text-xs">
+                        class="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 shadow-md text-white font-semibold text-sm">
                         <img src="./assets/spotify.png" class="w-5" alt="">
                         Listen on Spotify
                     </button>
 
                     <!-- Subscribe Button -->
                     <button
-                        class="flex items-center gap-2 px-6 py-3 border rounded-full text-amber-200 font-semibold text-sm sm:text-xs">
+                        class="flex items-center gap-2 px-6 py-3 border rounded-full text-amber-200 font-semibold text-sm">
                         <img src="./assets/message.png" class="w-5" alt="">
                         Subscribe
                     </button>
@@ -91,8 +108,89 @@
 
             </section>
 
-
         </header>
+
+
+
+        <section>
+            <section class="text-center text-white mb-30 ">
+                <div>
+                    <h1 class="text-5xl font-bold my-5">About the Podcast</h1>
+
+                    <p class="my-1">TechWave is your go-to podcast for staying ahead in the fast-paced world of
+                        technology.
+                    </p>
+                    <p class="my-1">We break down complex topics into digestible insights, explore productivity
+                        strategies
+                        that actually work,</p>
+                    <p class="my-1">and share stories of personal growth from industry leaders.</p>
+                    <p class="my-1">Join thousands of young professionals and tech enthusiasts who start their day with
+                        TechWave.</p>
+                </div>
+            </section>
+
+
+            <section class="mt-10 mb-30">
+                <div class="flex flex-col sm:flex-row md:flex text-center justify-center gap-12">
+
+                    <!-- LEFT COLUMN -->
+                    <div class="flex flex-row sm:gap-6 justify-around">
+                        <div>
+                            <h1 class="text-5xl font-bold text-[#00ff88] my-4">150K+</h1>
+                            <p class="text-white font-semibold">Monthly Listeners</p>
+                        </div>
+
+                        <div>
+                            <h1 class="text-5xl font-bold text-[#00ff88] my-4">200+</h1>
+                            <p class="text-white font-semibold">Episodes Published</p>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="flex flex-row sm:gap-6 justify-around">
+                        <div>
+                            <h1 class="text-5xl font-bold text-[#00ff88] my-4">4.9★</h1>
+                            <p class="text-white font-semibold">Average Rating</p>
+                        </div>
+
+                        <div>
+                            <h1 class="text-5xl font-bold text-[#00ff88] my-4">50+</h1>
+                            <p class="text-white font-semibold">Industry Experts</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+        </section>
+
+
+
+<section class="bg-[#230E3D] py-30 px-50">
+    <div class="text-center mb-2.5">
+<h1 class="font-bold text-white text-5xl">Why Choose TechWave</h1>
+    </div>
+
+<section class="grid grid-cols-3 grid-rows-3 gap-4">
+
+   
+</section>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
     </section>
 
 </body>
